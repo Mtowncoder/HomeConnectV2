@@ -192,7 +192,7 @@ def temp_input():
 
 
 class settings:
-    auth_key ='Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6MTksIngtcmVnIjoiRVUiLCJ4LWVudiI6IlNJTSJ9.eyJzdWIiOjEyMzkwLCJleHAiOjE2MDgzODcyNjYsInNjb3BlIjpbIklkZW50aWZ5QXBwbGlhbmNlIiwiRnJpZGdlRnJlZXplci1TZXR0aW5ncyIsIkZyaWRnZUZyZWV6ZXItQ29udHJvbCJdLCJhenAiOiI0NTIwOTE0QUY0Q0E4MjAxREU2NDZGRjRFRkU4OEQwRDkwODk1NzdBMDYwRjE3RjNCMzJBODIzNEJENEQzRDQzIiwiYXVkIjoiNDUyMDkxNEFGNENBODIwMURFNjQ2RkY0RUZFODhEMEQ5MDg5NTc3QTA2MEYxN0YzQjMyQTgyMzRCRDREM0Q0MyIsInBybSI6W10sImlzcyI6ImV1OnNpbTpvYXV0aDoxIiwianRpIjoiNjAwNTY3MzUtYjhiZC00ZDUyLWE4MjgtODE1MTA3YWRlOWVlIiwiaWF0IjoxNjA4MzAwODY2fQ.Mud8dCXt2Noe8IkRkRKsjB8oe0apPnfCWzj9okx-VgOo4YznuoQcu7wUa-As9VFmboSfzaQNHCwe0378aRVGoA'
+    auth_key =''
     setting_headers = { 'accept': 'application/vnd.bsh.sdk.v1+json', 'Accept-Language' : 'en-US', 'authorization': auth_key }
     fridge_headers = {'accept': 'application/vnd.bsh.sdk.v1+json','Accept-Language': 'en-US','authorization': auth_key,'Content-Type': 'application/vnd.bsh.sdk.v1+json',}
     freezer_headers = { 'accept': 'application/vnd.bsh.sdk.v1+json', 'Accept-Language': 'en-US','authorization': auth_key,'Content-Type': 'application/vnd.bsh.sdk.v1+json',}
@@ -251,7 +251,7 @@ class settings:
         print("The constraints are {} ".format(constraints))
 
 class change_settings:
-    auth_key ='Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6MTksIngtcmVnIjoiRVUiLCJ4LWVudiI6IlNJTSJ9.eyJzdWIiOjEyMzkwLCJleHAiOjE2MDgzODcyNjYsInNjb3BlIjpbIklkZW50aWZ5QXBwbGlhbmNlIiwiRnJpZGdlRnJlZXplci1TZXR0aW5ncyIsIkZyaWRnZUZyZWV6ZXItQ29udHJvbCJdLCJhenAiOiI0NTIwOTE0QUY0Q0E4MjAxREU2NDZGRjRFRkU4OEQwRDkwODk1NzdBMDYwRjE3RjNCMzJBODIzNEJENEQzRDQzIiwiYXVkIjoiNDUyMDkxNEFGNENBODIwMURFNjQ2RkY0RUZFODhEMEQ5MDg5NTc3QTA2MEYxN0YzQjMyQTgyMzRCRDREM0Q0MyIsInBybSI6W10sImlzcyI6ImV1OnNpbTpvYXV0aDoxIiwianRpIjoiNjAwNTY3MzUtYjhiZC00ZDUyLWE4MjgtODE1MTA3YWRlOWVlIiwiaWF0IjoxNjA4MzAwODY2fQ.Mud8dCXt2Noe8IkRkRKsjB8oe0apPnfCWzj9okx-VgOo4YznuoQcu7wUa-As9VFmboSfzaQNHCwe0378aRVGoA'
+    auth_key =''
     freezer_headers = { 'accept': 'application/vnd.bsh.sdk.v1+json', 'Accept-Language': 'en-US','authorization': auth_key,'Content-Type': 'application/vnd.bsh.sdk.v1+json',}
     fridge_headers = {'accept': 'application/vnd.bsh.sdk.v1+json','Accept-Language': 'en-US','authorization': auth_key,'Content-Type': 'application/vnd.bsh.sdk.v1+json',}
     freezer_min = -24 # bounds for changing freezer temp
